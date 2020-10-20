@@ -8,9 +8,10 @@
 // calculation should be -> amount + (amount * vat / 100) ) + tip 
 
 const calculateBill = require('../index');
+
 test("calculateBill is a function", () => {
 
-  expect(calculateBill).toBeDefined();
+  expect(calculateBill).toBeInstanceOf(Function)
 });
 
 test('it returns a string ', () => {
