@@ -22,7 +22,7 @@ test('it returns a string ', () => {
 
 test('it returns the right ammount', () => {
     const price = 100;
-    const vat = 20
+    const vat = 20;
     const tip = 10;
 
     expect(calculateBill(price, vat, tip)).toBe('£130');
